@@ -11,7 +11,7 @@ const initAuthData: AuthContextType = {
 
 export const AuthContext = createContext<AuthContextType>(initAuthData);
   
-export const AuthorizationProvider: FC = ({ children }) => { 
+export const AuthProvider: FC = ({ children }) => { 
     const [permissions, setPermissions] = useState<Permissions[]>([])
     const [isAuth, setIsAuth] = useState<boolean>(false);
 
