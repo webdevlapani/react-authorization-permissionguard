@@ -28,6 +28,7 @@ export const AuthProvider: FC = ({ children }) => {
         logout(callback: any) {
           return new Promise(() => {
             setIsAuth(false);
+            setPermissions([]);
             callback();
           });
         },

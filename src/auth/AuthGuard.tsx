@@ -25,9 +25,10 @@ export const AuthGuard: FC<AuthGuardProps> = ({ children, permissions = [], onAu
                 onAuthorizationFail();
                 return null;
             }
-        }    
+            return null
+        }  
+        
     }
 
-    return <>{children}</>
 }
 
